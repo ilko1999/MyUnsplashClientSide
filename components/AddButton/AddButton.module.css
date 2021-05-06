@@ -1,0 +1,9 @@
+.uploadComp{
+    position: absolute;
+    justify-content: center;
+    right: calc(80vw / 2);
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    z-index: 99;
+}

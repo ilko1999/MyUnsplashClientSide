@@ -1,5 +1,56 @@
 .imgStyling{
     width: 100%;
     margin-bottom: 15px;
-    border-radius: 12px;
+    border-radius: 24px;
+    filter: brightness(100%);
+    transition: all .2s ease;
+}
+
+.card{
+    position: relative;
+}
+
+.delete{
+    all: unset;
+    border: 1px solid #EB5757;
+    border-radius: 38px;
+    color: #EB5757;
+    padding: 5px 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+    transition: all .2s ease;
+    z-index: 3;
+}
+
+.pictureText{
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 35px;
+    left: 15px;
+    display: none;
+    transition: all .2s ease;
+    color: white;
+}
+
+.card:hover .imgStyling {
+    filter: brightness(40%);
+}
+
+
+.card:hover .pictureText{
+    display: block;
+}
+
+.card:hover .delete {
+    display: block;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: #EB5757;
+    border-color: white;
+    color: white;
 }

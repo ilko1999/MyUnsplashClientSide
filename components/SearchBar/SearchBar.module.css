@@ -1,0 +1,12 @@
+.searchBar{
+    all: unset;
+    margin-left: 20px;
+    color: #BDBDBD;
+}
+
+.searchContainer{
+    border: 1px solid #BDBDBD;
+    padding: 18px 56px 18px 56px;
+    border-radius: 16px;
+}
+

@@ -1,0 +1,22 @@
+.headerStyle{
+    padding-left: 11%;
+    padding-right: 11%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.toggleBtn{
+    all: unset;
+    padding: 18px 26px;
+    background-color: #3DB46D;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.toggleBtn:hover{
+    background-color: #34a05f;
+}

@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react';
-import data from '../../../utils/data.json';
+import data from '../utils/data.json';
 
 export const CardContext = createContext();
 
@@ -7,6 +7,7 @@ export const CardProvider = ({children}) => {
 
     const [searchField, setSearchField] = useState("");
     const [on, setOn] = useState(false);
+    const [label, setLabel] = useState("")
     
     const filteredData = data.filter((picture) =>
     picture.description.toLowerCase().includes(searchField.toLowerCase())
@@ -15,7 +16,7 @@ export const CardProvider = ({children}) => {
     return (
         <CardContext.Provider
             value={{
-                searchField, setSearchField, filteredData, on, setOn
+                searchField, setSearchField, filteredData, on, setOn,label, setLabel
             }}
         >
             {children}

@@ -1,13 +1,10 @@
 import "../styles/globals.css";
-import Filler from "../components/Filler/Filler";
-import Header from "../components/Header/Header";
-import { CardProvider } from "./api/context/CardProvider";
+import { CardProvider } from "../context/CardProvider";
 
-function MyApp() {
+function MyApp({ Component, pageProps }) {
   return (
     <CardProvider>
-      <Header />
-      <Filler />
+      <Component {...pageProps} />
     </CardProvider>
   );
 }

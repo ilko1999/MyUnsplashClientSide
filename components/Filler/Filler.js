@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { CardContext } from '../../pages/api/context/CardProvider';
+import { CardContext } from '../../context/CardProvider';
 import Pictures from '../Pictures/Pictures';
 
 function Filler() {
